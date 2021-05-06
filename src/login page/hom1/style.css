@@ -785,6 +785,7 @@ padding: 5rem 0;}
 
 
 @media(max-width: 650px){
+
     .logomain1 .logomain{
         width: 30px;
         margin-left: 1px;
@@ -936,6 +937,9 @@ padding: 5rem 0;}
         top: 30%;
         
     }
+    .account-detail .fa-user-circle{
+        font-size: 40px;
+    }
 }
 
 @media(max-width: 500px){
@@ -986,16 +990,28 @@ padding: 5rem 0;}
     .t-box .t-middle-text{
         order: 2;
     }
+    .account-detail .fa-user-circle{
+       
+        font-size: 40px;
+    }
 
 }
 @media(max-width: 425px){
     .food-container .food-type .img-container{
         width: 90% !important;
     }
+    .account-detail .fa-user-circle{
+       
+        font-size: 40px;
+    }
     
 }
 @media (max-width: 376px){
     .mainparticle{
         display: none;
+    }
+    .account-detail .fa-user-circle{
+       
+        font-size: 40px;
     }
 }
