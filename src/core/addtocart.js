@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../login page/hom1/style.css'
 import '../login page/hom1/Dry-Fruit.css'
+import Payment from './payment'
 import { Link } from 'react-router-dom';
 const AddToCart = () => {
     const [addtocart, setAddtocart] = useState([])
@@ -19,6 +20,7 @@ const AddToCart = () => {
     return (
         <>
             <button className="wbtn123 wbtn1123 wishlistb "><Link to='/'>BACK TO HOME</Link></button>
+            <Payment/>
             {( addtocart ) ? (
                 <>
                     <h1 className="wishlist0 container">YOUR CART</h1>

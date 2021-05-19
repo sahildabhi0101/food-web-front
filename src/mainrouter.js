@@ -8,6 +8,7 @@ import Profile  from './user/Profile'
 import Vegetable from './core/vegetable'
 import Dryfruit from './core/dryfruit'
 import Fruit from './core/fruit'
+import Payment from './core/payment'
 import Wishlist  from './core/wishlist'
 import EditProfile from './user/editprofile'
 import Privateroute from './auth/privateroute'
@@ -28,6 +29,7 @@ const mainrouter = () =>
             <Route exact path="/vegetable" component={Vegetable} />
             <Route exact path="/dryfruit" component={Dryfruit} />
             <Route exact path="/fruit" component={Fruit} />
+            <Route exact path="/payment" component={Payment} />
             <Privateroute exact path="/user/:userId" component={Profile} />
             {/* <Privateroute exact path="/user/users/:userId" component={Users} /> */}
             <Privateroute exact path="/user/wishlist/:userId" component={Wishlist} />
