@@ -29,7 +29,7 @@ function Nav() {
                                 <div className="dropdown">
                                     <button className="dropbtn">Category</button>
                                     <div className="dropdown-content">
-                                        <Link  to="/fruit">Fruit</Link>
+                                        <Link to="/fruit">Fruit</Link>
                                         <Link to='/vegetable'>Vegetable</Link>
                                         <Link to="/dryfruit">Dry-fruit</Link>
                                     </div>
@@ -45,29 +45,29 @@ function Nav() {
                                 <li><Link to="/signin">Login</Link></li>
                             </>
                         )}
-                        </div>
-                        {isauthenticated() && (
-                            <>
-                                <div className="account-detail">
-                                    <i className="fas fa-user-circle fa-4x"></i>
-                                    <ul className="account-content">
-                                        <li>
-                                            <Link to={`/user/${isauthenticated().user._id}`}>
-                                                {` ${isauthenticated().user.name}`}
-                                            </Link>
-                                        </li>
-                                        {/* .toUpperCase() */}
-                                        <li><Link to={`/user/edit/${isauthenticated().user._id}`} >
-                                            Edit Profile
-                            </Link>
-                                        </li>
-                                        <li><Link to={`/user/wishlist/${isauthenticated().user._id}`}> Wish List</Link></li>
-                                        <li><Link to={`/user/addtocart/${isauthenticated().user._id}`}> My Orders</Link></li>
-                                        <li><a href="?" onClick={() => signout(() => this.props.history.push('/'))}>signout</a></li>
-                                    </ul>
-                                </div>
-                            </>
-                        )}
+                    </div>
+                    {isauthenticated() && (
+                        <>
+                            <div className="account-detail">
+                                <i className="fas fa-user-circle fa-4x"></i>
+                                <ul className="account-content">
+                                    <li>
+                                        <Link to={`/user/${isauthenticated().user._id}`}>
+                                            {` ${isauthenticated().user.name}`}
+                                        </Link>
+                                    </li>
+                                    {/* .toUpperCase() */}
+                                    <li><Link to={`/user/edit/${isauthenticated().user._id}`} >
+                                        Edit Profile
+                                    </Link>
+                                    </li>
+                                    <li><Link to={`/user/wishlist/${isauthenticated().user._id}`}> Wish List</Link></li>
+                                    <li><Link to={`/user/addtocart/${isauthenticated().user._id}`}> My Orders</Link></li>
+                                    <li><a href="?" onClick={() => signout(() => this.props.history.push('/'))}>signout</a></li>
+                                </ul>
+                            </div>
+                        </>
+                    )}
                 </div>
             </nav>
         </>
